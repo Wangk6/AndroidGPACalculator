@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-20dp">
+
+    <EditText
+        android:id="@+id/editTxtGradeFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="(ex: 90)"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/txtGradeFive"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtGradeFour" />
+
+    <EditText
+        android:id="@+id/editTxtGradeTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:ems="10"
+        android:hint="(ex: 90)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/txtGradeTwo"
+        app:layout_constraintStart_toEndOf="@+id/txtGradeTwo"
+        app:layout_constraintTop_toBottomOf="@+id/txtGradeTwo" />
+
+    <EditText
+        android:id="@+id/editTxtGradeThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="(ex: 90)"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/txtGradeThree"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtGradeTwo" />
+
+    <EditText
+        android:id="@+id/editTxtGradeFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="(ex: 90)"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/txtGradeFour"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtGradeThree" />
+
+    <TextView
+        android:id="@+id/txtGradeFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Grade 5:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtGradeFour"
+        app:layout_constraintTop_toTopOf="@+id/editTxtGradeFive" />
+
+    <EditText
+        android:id="@+id/editTxtGradeOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="(ex: 90)"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtGradeTwo"
+        app:layout_constraintStart_toEndOf="@+id/txtGradeOne" />
+
+    <TextView
+        android:id="@+id/txtGradeTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Grade 2:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtGradeOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtGradeThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Grade 3:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtGradeTwo"
+        app:layout_constraintTop_toTopOf="@+id/editTxtGradeThree" />
+
+    <TextView
+        android:id="@+id/txtGradeFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Grade 4:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtGradeThree"
+        app:layout_constraintTop_toTopOf="@+id/editTxtGradeFour" />
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="GPA Calculator"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtGradeOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:text="Grade 1:"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTxtGradeOne"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalculateGPA"
+        android:layout_width="180dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="50dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="@+id/txtGradeFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTxtGradeOne"
+        app:layout_constraintTop_toTopOf="@+id/txtComputeGPA" />
+
+    <TextView
+        android:id="@+id/txtComputeGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="57dp"
+        android:text="Compute GPA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtGradeThree"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalculateGPA"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
+
+    <TextView
+        android:id="@+id/txtDisplayGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/editTxtGradeFive"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculateGPA"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="611dp" />
+
+    <Button
+        android:id="@+id/btnClearForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
